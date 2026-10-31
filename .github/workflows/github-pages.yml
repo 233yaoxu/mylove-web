@@ -25,7 +25,7 @@ jobs:
       - name: Assemble website
         run: |
           cat site.zip.001 site.zip.002 > /tmp/site.zip
-          echo '41aa015e72804c67f094b43784ad0e2f2656470b557848c90c4516d082a94c37  /tmp/site.zip' | sha256sum --check --strict
+          echo 'a19da8570673916d0f1f3f5e49841099ee86c97cdd53c991ad7489e368869d7f  /tmp/site.zip' | sha256sum --check --strict
           mkdir -p _site
           unzip -q /tmp/site.zip -d _site
           test -f _site/index.html
