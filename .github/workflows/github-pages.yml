@@ -25,11 +25,18 @@ jobs:
       - name: Assemble website
         run: |
           cat site.zip.001 site.zip.002 > /tmp/site.zip
-          echo 'a19da8570673916d0f1f3f5e49841099ee86c97cdd53c991ad7489e368869d7f  /tmp/site.zip' | sha256sum --check --strict
+          echo 'af7e8e65889067c538c708c5d6ca6185fc53c0544d8c247e55284ca4150141ce  /tmp/site.zip' | sha256sum --check --strict
           mkdir -p _site
           unzip -q /tmp/site.zip -d _site
           test -f _site/index.html
           test -f _site/.nojekyll
+      - name: Add app update manifest
+        run: |
+          if [ -f updates/latest.json ]; then
+            python3 -m json.tool updates/latest.json > /dev/null
+            mkdir -p _site/updates
+            cp updates/latest.json _site/updates/latest.json
+          fi
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
