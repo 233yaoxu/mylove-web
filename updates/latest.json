@@ -1,11 +1,11 @@
 {
   "schemaVersion": 1,
-  "versionName": "2.5.14",
-  "versionCode": 149,
+  "versionName": "2.5.15",
+  "versionCode": 150,
   "packageName": "com.example.app",
-  "downloadUrl": "https://github.com/233yaoxu/mylove-web/releases/download/v2.5.14/mylove-2.5.14.apk",
-  "sha256": "4a7e83e88b4e388ad217727f30676ac9d64575a04ece280895d94124b2f86764",
-  "size": 55597472,
-  "publishedAt": "2026-11-02T06:01:44.964Z",
-  "notes": "恢复完整的灵宝客服入口与助手功能。\r\n优化历史记录与人设加载，保留已有存档和软件内更新。"
+  "downloadUrl": "https://github.com/233yaoxu/mylove-web/releases/download/v2.5.15/mylove-2.5.15.apk",
+  "sha256": "ee2985c6fe5590759f389b27a2e3981f7c0c2a864129a0eb97dc51a022ddc264",
+  "size": 55603525,
+  "publishedAt": "2026-11-02T07:47:03.849Z",
+  "notes": "优化 Rencontre 打开速度、消息页面切换和后台同步，减少卡顿。\r\n调整 Rencontre 顶部留白，让标题和按钮更易操作。\r\n保留灵宝客服、主线聊天记录与人设加载优化、已有存档和软件内更新。"
 }
