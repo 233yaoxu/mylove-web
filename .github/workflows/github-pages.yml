@@ -1,4 +1,4 @@
-name: Deploy mylove to GitHub Pages
+name: Deploy mylove 2.5.14 to GitHub Pages
 
 on:
   push:
@@ -22,21 +22,32 @@ jobs:
         uses: actions/checkout@v4
       - name: Configure Pages
         uses: actions/configure-pages@v5
-      - name: Assemble website
+      - name: Assemble exact verified website
         run: |
+          set -euo pipefail
           cat site.zip.001 site.zip.002 > /tmp/site.zip
-          echo 'b083cd0a15f39a558ade1dd3e74b2125fcff161e2a537d9472b9eb9f4f992d59  /tmp/site.zip' | sha256sum --check --strict
+          echo 'cf966b0cb4cd0514f6ffd6fee84bad086507aa35777a14742b1c697775a7d520  /tmp/site.zip' | sha256sum --check --strict
           mkdir -p _site
           unzip -q /tmp/site.zip -d _site
           test -f _site/index.html
-          test -f _site/.nojekyll
-      - name: Add app update manifest
+          touch _site/.nojekyll
+      - name: Require exact 2.5.14 app update manifest
         run: |
-          if [ -f updates/latest.json ]; then
-            python3 -m json.tool updates/latest.json > /dev/null
-            mkdir -p _site/updates
-            cp updates/latest.json _site/updates/latest.json
-          fi
+          set -euo pipefail
+          test -f updates/latest.json
+          python3 - <<'PY'
+          import json
+          from pathlib import Path
+          value = json.loads(Path('updates/latest.json').read_text(encoding='utf-8'))
+          expected = {'schemaVersion': 1, 'versionName': '2.5.14', 'versionCode': 149,
+              'packageName': 'com.example.app', 'sha256': '4a7e83e88b4e388ad217727f30676ac9d64575a04ece280895d94124b2f86764', 'size': 55597472,
+              'downloadUrl': 'https://github.com/233yaoxu/mylove-web/releases/download/v2.5.14/mylove-2.5.14.apk'}
+          for key, wanted in expected.items():
+              if value.get(key) != wanted:
+                  raise SystemExit('Refuse wrong app-update field: ' + key)
+          PY
+          mkdir -p _site/updates
+          cp updates/latest.json _site/updates/latest.json
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
