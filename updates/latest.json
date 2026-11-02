@@ -1,11 +1,11 @@
 {
   "schemaVersion": 1,
-  "versionName": "2.5.13",
-  "versionCode": 148,
+  "versionName": "2.5.14",
+  "versionCode": 149,
   "packageName": "com.example.app",
-  "downloadUrl": "https://github.com/233yaoxu/mylove-web/releases/download/v2.5.13/mylove-2.5.13.apk",
-  "sha256": "ac0cfa84b8d1ec9012bc745be5ffc00c9d41dab189813b41881cae1a9988336e",
-  "size": 53890806,
-  "publishedAt": "2026-11-02T04:41:16.580Z",
-  "notes": "Rencontre 云端好友与聊天服务更新。\r\n新增云端居民 AI 与社区互动。\r\n保留软件内更新、联系客服和现有存档。"
+  "downloadUrl": "https://github.com/233yaoxu/mylove-web/releases/download/v2.5.14/mylove-2.5.14.apk",
+  "sha256": "4a7e83e88b4e388ad217727f30676ac9d64575a04ece280895d94124b2f86764",
+  "size": 55597472,
+  "publishedAt": "2026-11-02T06:01:44.964Z",
+  "notes": "恢复完整的灵宝客服入口与助手功能。\r\n优化历史记录与人设加载，保留已有存档和软件内更新。"
 }
