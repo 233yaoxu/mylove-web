@@ -1,11 +1,11 @@
 {
   "schemaVersion": 1,
-  "versionName": "2.5.12",
-  "versionCode": 147,
+  "versionName": "2.5.13",
+  "versionCode": 148,
   "packageName": "com.example.app",
-  "downloadUrl": "https://github.com/233yaoxu/mylove-web/releases/download/v2.5.12/mylove-2.5.12.apk",
-  "sha256": "b6cdbda00cf10de47a7154390ddb70c7555a56be76d2cfb7efa40cf7d67e740c",
-  "size": 54029228,
-  "publishedAt": "2026-11-01T04:35:17.371Z",
-  "notes": "新增右侧设置“软件更新”入口，使用指定图标。\r\n新增版本页面：当前版本、版本更新、联系客服。\r\n支持检查更新、下载安装包、校验后覆盖安装，保留原有存档。\r\n客服联系支持 QQ 2080276525、邮件 2080276525@qq.com 及复制联系方式。\r\n优化断网重试、下载取消和返回操作。"
+  "downloadUrl": "https://github.com/233yaoxu/mylove-web/releases/download/v2.5.13/mylove-2.5.13.apk",
+  "sha256": "ac0cfa84b8d1ec9012bc745be5ffc00c9d41dab189813b41881cae1a9988336e",
+  "size": 53890806,
+  "publishedAt": "2026-11-02T04:41:16.580Z",
+  "notes": "Rencontre 云端好友与聊天服务更新。\r\n新增云端居民 AI 与社区互动。\r\n保留软件内更新、联系客服和现有存档。"
 }
