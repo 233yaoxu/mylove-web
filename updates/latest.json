@@ -1,11 +1,11 @@
 {
   "schemaVersion": 1,
-  "versionName": "2.5.16",
-  "versionCode": 151,
+  "versionName": "2.5.21",
+  "versionCode": 156,
   "packageName": "com.example.app",
-  "downloadUrl": "https://github.com/233yaoxu/mylove-web/releases/download/v2.5.16/mylove-2.5.16.apk",
-  "sha256": "b0e0ff132f0c3c60bdbfc25ab5fe086e7ccf2483d467229ea860ab13995c36b2",
-  "size": 55605337,
-  "publishedAt": "2026-11-02T10:39:49.489Z",
-  "notes": "修复 Rencontre 切后台返回后卡在账号恢复、帖子及评论迟迟不显示的问题。\r\n账号恢复和消息同步分开进行，慢网络下可先查看已读内容并准备评论。\r\n保留现有 NPC、灵宝客服、主线与已有存档。"
+  "downloadUrl": "https://github.com/233yaoxu/mylove-web/releases/download/v2.5.21/mylove-2.5.21.apk",
+  "sha256": "487bbf8d409ef4c4181c38b2898acd29681095352e28ef6936c28d29a4e29456",
+  "size": 57645967,
+  "publishedAt": "2026-11-03T17:35:38.253Z",
+  "notes": "修复 Rencontre 云社区连接地址，统一使用 yaoxu.pythonanywhere.com。\n同步部署新版公开 AI 接口，修复相关功能返回 404 的问题。\n旧官方地址的登录状态、草稿与 AI 设置自动迁移并保留备份。\n更新动态加载、评论恢复、居民资料、头像、公开 AI 社区生活及账号恢复。\n整合近期聊天、记忆整理、多角色、语音、界面和启动恢复更新。\n沿用原有应用包名和签名，可覆盖安装并保留本地记录。"
 }
