@@ -1,4 +1,4 @@
-name: Deploy mylove 2.6.0 to GitHub Pages
+name: Deploy mylove 2.6.1 to GitHub Pages
 
 on:
   push:
@@ -26,12 +26,12 @@ jobs:
         run: |
           set -euo pipefail
           cat site.zip.001 site.zip.002 > /tmp/site.zip
-          echo '53448efdefdfb8f54f3f04b098e96768401fbdc7da97f7d6cc38bafb71d06f06  /tmp/site.zip' | sha256sum --check --strict
+          echo 'b44149859a362c0dfc3eecc7358d80a45d707f83287ff47035b1b645fbc9262c  /tmp/site.zip' | sha256sum --check --strict
           mkdir _site
           unzip -q /tmp/site.zip -d _site
           test -f _site/index.html
           touch _site/.nojekyll
-      - name: Require exact 2.6.0 app update manifest
+      - name: Require exact 2.6.1 app update manifest
         run: |
           set -euo pipefail
           test -f updates/latest.json
@@ -39,9 +39,9 @@ jobs:
           import json
           from pathlib import Path
           value = json.loads(Path('updates/latest.json').read_text(encoding='utf-8'))
-          expected = {'schemaVersion': 1, 'versionName': '2.6.0', 'versionCode': 168,
-              'packageName': 'com.example.app', 'sha256': 'fa0696d7c6a3480a2e9008d4cdbcfc0217c2ca2faf12115a75d3a798c35ffce4', 'size': 57680242,
-              'downloadUrl': 'https://github.com/233yaoxu/mylove-web/releases/download/v2.6.0/mylove-2.6.0.apk'}
+          expected = {'schemaVersion': 1, 'versionName': '2.6.1', 'versionCode': 169,
+              'packageName': 'com.example.app', 'sha256': '18b8791cb5ec776bdcdaa96ce4cfcd9e3aae9938a28b0feddba9c300044cffb7', 'size': 57668614,
+              'downloadUrl': 'https://github.com/233yaoxu/mylove-web/releases/download/v2.6.1/mylove-2.6.1.apk'}
           for key, wanted in expected.items():
               if value.get(key) != wanted:
                   raise SystemExit('Refuse wrong app-update field: ' + key)
@@ -51,15 +51,15 @@ jobs:
       - name: Publish verified Android download and share page
         run: |
           set -euo pipefail
-          mkdir -p _site/download _site/downloads/v2.6.0
+          mkdir -p _site/download _site/downloads/v2.6.1
           cp download/index.html _site/download/index.html
-          apk='_site/downloads/v2.6.0/mylove-2.6.0.apk'
+          apk='_site/downloads/v2.6.1/mylove-2.6.1.apk'
           curl --fail --location --retry 3 --connect-timeout 15 --max-time 300 \
             --proto '=https' --proto-redir '=https' \
             --output "$apk" \
-            'https://github.com/233yaoxu/mylove-web/releases/download/v2.6.0/mylove-2.6.0.apk'
-          test "$(stat --format=%s "$apk")" = '57680242'
-          echo "fa0696d7c6a3480a2e9008d4cdbcfc0217c2ca2faf12115a75d3a798c35ffce4  $apk" | sha256sum --check --strict
+            'https://github.com/233yaoxu/mylove-web/releases/download/v2.6.1/mylove-2.6.1.apk'
+          test "$(stat --format=%s "$apk")" = '57668614'
+          echo "18b8791cb5ec776bdcdaa96ce4cfcd9e3aae9938a28b0feddba9c300044cffb7  $apk" | sha256sum --check --strict
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:

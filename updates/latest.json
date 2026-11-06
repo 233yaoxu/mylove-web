@@ -1,11 +1,11 @@
 {
   "schemaVersion": 1,
-  "versionName": "2.6.0",
-  "versionCode": 168,
+  "versionName": "2.6.1",
+  "versionCode": 169,
   "packageName": "com.example.app",
-  "downloadUrl": "https://github.com/233yaoxu/mylove-web/releases/download/v2.6.0/mylove-2.6.0.apk",
-  "sha256": "fa0696d7c6a3480a2e9008d4cdbcfc0217c2ca2faf12115a75d3a798c35ffce4",
-  "size": 57680242,
-  "publishedAt": "2026-11-06T13:18:02.875Z",
-  "notes": "应用内下载较慢时，请用手机浏览器打开此下载页，也可分享给朋友：\nhttps://233yaoxu.github.io/mylove-web/download/\n下载完成后直接覆盖更新，无需卸载原应用。\n\n心动日常 2.6.0（版本码 168）\n\n同步当前应用、网页和 Rencontre 社区代码，包含本轮居民重复评论修复：自动评论在写入前检查同帖正文，避开重复降级句，并统一旧模板的展示、评论计数和热度规则。\n\n保留现有存档隔离、群聊调度、资料编辑、头像和页面恢复相关实现；居民模型仍仅限 agnes-2.5-flash、agnes-3.0-flash，Qwen3-Embedding-4B 仅用于向量嵌入。\n\n安装包沿用原包名和原签名，可覆盖更新原版。更新前建议在应用内备份重要存档；无需卸载旧版。\n\n本次发布同时提供干净源码包、网页包、独立后端包与 SHA256。发布前完成网页语法及 325 项前端/社区/打包回归、478 项后端回归、Android 单元测试和 APK 完整性验证。本轮未连接手机，尚未进行 2.6.0 真机覆盖安装验收。"
+  "downloadUrl": "https://github.com/233yaoxu/mylove-web/releases/download/v2.6.1/mylove-2.6.1.apk",
+  "sha256": "18b8791cb5ec776bdcdaa96ce4cfcd9e3aae9938a28b0feddba9c300044cffb7",
+  "size": 57668614,
+  "publishedAt": "2026-11-06T15:20:37.098Z",
+  "notes": "分享给朋友或用手机浏览器下载：\nhttps://233yaoxu.github.io/mylove-web/download/\n下载后直接覆盖更新。\n\n心动日常 2.6.1（版本码 169）\n\n重新打包当前修改后的文件，包含角色人设核心、系统消息注入、反重复处理和最终提示词脚本的最新内容；人设维度读取和提示词组织沿用本地当前实现。\n\n安装包沿用 com.example.app 和原证书，可直接覆盖更新。共享下载页继续提供浏览器下载和备用下载，朋友也可以使用同一入口：\nhttps://233yaoxu.github.io/mylove-web/download/\n\n本次已通过网页语法检查、325 项社区/更新/打包回归、39 项 Android 单元检查，以及 APK 的版本、证书、完整性和 422 项运行资源逐字节核对。发布附件提供源码、网页包、配套后端包和 SHA256 校验。\n\n验收限制：旧人设行为测试存在与当前规则不一致的断言；弹幕注入接口的 2 项失败也已在 2.6.0 源码基线复现。上述失败未标记为通过。本次不包含对这些历史问题的修复，未进行在线模型效果验证；当前未连接手机，未进行 2.6.1 真机覆盖安装验收。\n\n社区后端源码与 2.6.0 相同，附带的 Appwrite 包是现有已验证部署包。本次重新发布不迁移或重建社区数据。\n"
 }
