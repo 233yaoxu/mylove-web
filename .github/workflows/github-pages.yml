@@ -1,4 +1,4 @@
-name: Deploy mylove 2.5.21 to GitHub Pages
+name: Deploy mylove 2.6.0 to GitHub Pages
 
 on:
   push:
@@ -26,12 +26,12 @@ jobs:
         run: |
           set -euo pipefail
           cat site.zip.001 site.zip.002 > /tmp/site.zip
-          echo 'a2475a31b4e6915cc07ef4ae766627da5c9b36dc24208237547752f02b9fb44f  /tmp/site.zip' | sha256sum --check --strict
+          echo '53448efdefdfb8f54f3f04b098e96768401fbdc7da97f7d6cc38bafb71d06f06  /tmp/site.zip' | sha256sum --check --strict
           mkdir _site
           unzip -q /tmp/site.zip -d _site
           test -f _site/index.html
           touch _site/.nojekyll
-      - name: Require exact 2.5.21 app update manifest
+      - name: Require exact 2.6.0 app update manifest
         run: |
           set -euo pipefail
           test -f updates/latest.json
@@ -39,9 +39,9 @@ jobs:
           import json
           from pathlib import Path
           value = json.loads(Path('updates/latest.json').read_text(encoding='utf-8'))
-          expected = {'schemaVersion': 1, 'versionName': '2.5.21', 'versionCode': 156,
-              'packageName': 'com.example.app', 'sha256': '487bbf8d409ef4c4181c38b2898acd29681095352e28ef6936c28d29a4e29456', 'size': 57645967,
-              'downloadUrl': 'https://github.com/233yaoxu/mylove-web/releases/download/v2.5.21/mylove-2.5.21.apk'}
+          expected = {'schemaVersion': 1, 'versionName': '2.6.0', 'versionCode': 168,
+              'packageName': 'com.example.app', 'sha256': 'fa0696d7c6a3480a2e9008d4cdbcfc0217c2ca2faf12115a75d3a798c35ffce4', 'size': 57680242,
+              'downloadUrl': 'https://github.com/233yaoxu/mylove-web/releases/download/v2.6.0/mylove-2.6.0.apk'}
           for key, wanted in expected.items():
               if value.get(key) != wanted:
                   raise SystemExit('Refuse wrong app-update field: ' + key)
