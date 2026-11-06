@@ -1,11 +1,11 @@
 {
   "schemaVersion": 1,
-  "versionName": "2.5.21",
-  "versionCode": 156,
+  "versionName": "2.6.0",
+  "versionCode": 168,
   "packageName": "com.example.app",
-  "downloadUrl": "https://github.com/233yaoxu/mylove-web/releases/download/v2.5.21/mylove-2.5.21.apk",
-  "sha256": "487bbf8d409ef4c4181c38b2898acd29681095352e28ef6936c28d29a4e29456",
-  "size": 57645967,
-  "publishedAt": "2026-11-03T17:35:38.253Z",
-  "notes": "修复 Rencontre 云社区连接地址，统一使用 yaoxu.pythonanywhere.com。\n同步部署新版公开 AI 接口，修复相关功能返回 404 的问题。\n旧官方地址的登录状态、草稿与 AI 设置自动迁移并保留备份。\n更新动态加载、评论恢复、居民资料、头像、公开 AI 社区生活及账号恢复。\n整合近期聊天、记忆整理、多角色、语音、界面和启动恢复更新。\n沿用原有应用包名和签名，可覆盖安装并保留本地记录。"
+  "downloadUrl": "https://github.com/233yaoxu/mylove-web/releases/download/v2.6.0/mylove-2.6.0.apk",
+  "sha256": "fa0696d7c6a3480a2e9008d4cdbcfc0217c2ca2faf12115a75d3a798c35ffce4",
+  "size": 57680242,
+  "publishedAt": "2026-11-06T13:18:02.875Z",
+  "notes": "心动日常 2.6.0（版本码 168）\n\n同步当前应用、网页和 Rencontre 社区代码，包含本轮居民重复评论修复：自动评论在写入前检查同帖正文，避开重复降级句，并统一旧模板的展示、评论计数和热度规则。\n\n保留现有存档隔离、群聊调度、资料编辑、头像和页面恢复相关实现；居民模型仍仅限 agnes-2.5-flash、agnes-3.0-flash，Qwen3-Embedding-4B 仅用于向量嵌入。\n\n安装包沿用原包名和原签名，可覆盖更新原版。更新前建议在应用内备份重要存档；无需卸载旧版。\n\n本次发布同时提供干净源码包、网页包、独立后端包与 SHA256。发布前完成网页语法及 325 项前端/社区/打包回归、478 项后端回归、Android 单元测试和 APK 完整性验证。本轮未连接手机，尚未进行 2.6.0 真机覆盖安装验收。"
 }
