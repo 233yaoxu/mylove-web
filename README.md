@@ -25,7 +25,7 @@ Android 下载页：<https://233yaoxu.github.io/mylove-web/download/>。可直�
 | [rencontre-appwrite-2.6.1.tar.gz](https://github.com/233yaoxu/mylove-web/releases/download/v2.6.1/rencontre-appwrite-2.6.1.tar.gz) | 已验证的现行 Appwrite 函数代码包 |
 | [SHA256SUMS.txt](https://github.com/233yaoxu/mylove-web/releases/download/v2.6.1/SHA256SUMS.txt) | 全部发布附件的 SHA256 |
 
-仓库中的 `site.zip.001`、`site.zip.002` 是网页 ZIP 的分卷，由 GitHub Pages 工作流按固定 SHA256 合并后部署；`rencontre-server.zip` 配套现有 Docker/Render 打包入口。完整源码和 APK 放在 Releases。Pages 工作流从固定 Releases 地址取得同一份 APK，校验 57680242 字节及 SHA256 后发布下载副本；校验失败则中止部署。
+仓库中的 `site.zip.001`、`site.zip.002` 是网页 ZIP 的分卷，由 GitHub Pages 工作流按固定 SHA256 合并后部署；`rencontre-server.zip` 配套现有 Docker/Render 打包入口。完整源码和 APK 放在 Releases。Pages 工作流从固定 Releases 地址取得同一份 APK，校验 57668614 字节及 SHA256 后发布下载副本；校验失败则中止部署。
 
 固定网页地址：<https://233yaoxu.github.io/mylove-web/>
 
