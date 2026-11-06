@@ -1,0 +1,75 @@
+{
+  "versionName": "2.6.1",
+  "versionCode": 169,
+  "packageName": "com.example.app",
+  "apk": {
+    "size": 57668614,
+    "sha256": "18b8791cb5ec776bdcdaa96ce4cfcd9e3aae9938a28b0feddba9c300044cffb7",
+    "url": "https://github.com/233yaoxu/mylove-web/releases/download/v2.6.1/mylove-2.6.1.apk"
+  },
+  "website": {
+    "sha256": "b44149859a362c0dfc3eecc7358d80a45d707f83287ff47035b1b645fbc9262c",
+    "size": 44579054,
+    "entries": 422,
+    "chunks": [
+      "site.zip.001",
+      "site.zip.002"
+    ]
+  },
+  "checks": {
+    "frontendReleaseTests": 325,
+    "androidUnitTests": {
+      "tests": 39,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "apkResources": 422,
+    "apkOriginalSignature": true,
+    "archiveByteVerification": true,
+    "credentialScan": true
+  },
+  "knownLimitations": [
+    "Legacy persona assertions do not match current modified rules; failing results retained.",
+    "Two barrage-injector integration failures reproduced on 2.6.0 baseline.",
+    "No live model or phone installation verification."
+  ],
+  "phoneInstallVerified": false,
+  "assets": [
+    {
+      "name": "mylove-2.6.1.apk",
+      "size": 57668614,
+      "sha256": "18b8791cb5ec776bdcdaa96ce4cfcd9e3aae9938a28b0feddba9c300044cffb7"
+    },
+    {
+      "name": "mylove-source-2.6.1.zip",
+      "size": 47425521,
+      "sha256": "03821be218f7f74caa482617c7d821fd2d8528d425a399e648290639405fd187"
+    },
+    {
+      "name": "mylove-web-2.6.1.zip",
+      "size": 44579054,
+      "sha256": "b44149859a362c0dfc3eecc7358d80a45d707f83287ff47035b1b645fbc9262c"
+    },
+    {
+      "name": "rencontre-server-2.6.1.zip",
+      "size": 190949,
+      "sha256": "ac031c42a175c157ad4cfdb02f502007bedf39d76da22cb8c041b6943ac3c858"
+    },
+    {
+      "name": "rencontre-appwrite-2.6.1.tar.gz",
+      "size": 161263,
+      "sha256": "1ae9c617eca64c2f9039e05657491907bd741f7ac24498895dbc7141e56183f3"
+    },
+    {
+      "name": "release-notes.md",
+      "size": 1212,
+      "sha256": "d90ab22deebd632e9df20ec7f40f0cc55ee521ca3fdb2e7f749f5f5870e07708"
+    },
+    {
+      "name": "SHA256SUMS.txt",
+      "size": 540,
+      "sha256": "2001333c0ebd401344624cc576233316913f49c6bb09bf9959b0e57ae5228ffe"
+    }
+  ]
+}
