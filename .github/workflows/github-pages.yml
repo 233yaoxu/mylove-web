@@ -48,6 +48,18 @@ jobs:
           PY
           mkdir -p _site/updates
           cp updates/latest.json _site/updates/latest.json
+      - name: Publish verified Android download and share page
+        run: |
+          set -euo pipefail
+          mkdir -p _site/download _site/downloads/v2.6.0
+          cp download/index.html _site/download/index.html
+          apk='_site/downloads/v2.6.0/mylove-2.6.0.apk'
+          curl --fail --location --retry 3 --connect-timeout 15 --max-time 300 \
+            --proto '=https' --proto-redir '=https' \
+            --output "$apk" \
+            'https://github.com/233yaoxu/mylove-web/releases/download/v2.6.0/mylove-2.6.0.apk'
+          test "$(stat --format=%s "$apk")" = '57680242'
+          echo "fa0696d7c6a3480a2e9008d4cdbcfc0217c2ca2faf12115a75d3a798c35ffce4  $apk" | sha256sum --check --strict
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
