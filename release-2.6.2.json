@@ -1,0 +1,76 @@
+{
+  "versionName": "2.6.2",
+  "versionCode": 170,
+  "packageName": "com.example.app",
+  "apk": {
+    "size": 57676004,
+    "sha256": "203baf4d00f8192468889a44d4588feda71ba7ad618482f0773ff04ace47a3fc",
+    "url": "https://github.com/233yaoxu/mylove-web/releases/download/v2.6.2/mylove-2.6.2.apk"
+  },
+  "website": {
+    "sha256": "a6662ceedf014c72757b24a1bbb1231f8546a034865687981dfc8aaaef460093",
+    "size": 44587919,
+    "entries": 422,
+    "chunks": [
+      "site.zip.001",
+      "site.zip.002"
+    ]
+  },
+  "checks": {
+    "webSyntax": {
+      "externalScriptReferences": 97,
+      "inlineBlocks": 69
+    },
+    "androidBuild": true,
+    "apkResources": 422,
+    "apkOriginalSignature": true,
+    "apkResourcesMatchOriginal": true,
+    "sourceAndWebRuntimeMatchOriginal": true,
+    "originalProtectedFiles": 1745,
+    "archiveByteVerification": true,
+    "credentialScan": true
+  },
+  "knownLimitations": [
+    "Packaging-only release: no new functional fixes.",
+    "No new community regression, live model or phone installation verification.",
+    "Production backend not redeployed."
+  ],
+  "phoneInstallVerified": false,
+  "assets": [
+    {
+      "name": "mylove-2.6.2.apk",
+      "size": 57676004,
+      "sha256": "203baf4d00f8192468889a44d4588feda71ba7ad618482f0773ff04ace47a3fc"
+    },
+    {
+      "name": "mylove-source-2.6.2.zip",
+      "size": 47443517,
+      "sha256": "8216f560bb50caf0370947bbf40331d4f9d41f134f96c05a8b61f045ef0836d7"
+    },
+    {
+      "name": "mylove-web-2.6.2.zip",
+      "size": 44587919,
+      "sha256": "a6662ceedf014c72757b24a1bbb1231f8546a034865687981dfc8aaaef460093"
+    },
+    {
+      "name": "rencontre-server-2.6.2.zip",
+      "size": 190949,
+      "sha256": "ac031c42a175c157ad4cfdb02f502007bedf39d76da22cb8c041b6943ac3c858"
+    },
+    {
+      "name": "rencontre-appwrite-2.6.2.tar.gz",
+      "size": 161263,
+      "sha256": "1ae9c617eca64c2f9039e05657491907bd741f7ac24498895dbc7141e56183f3"
+    },
+    {
+      "name": "release-notes.md",
+      "size": 1157,
+      "sha256": "b6fca0fc18db514b3f691344cd0428ad2cf45c1cbec299a5991e3e02d3517fda"
+    },
+    {
+      "name": "SHA256SUMS.txt",
+      "size": 540,
+      "sha256": "b1eceec4b69965701e090cf7292f499fd287a36379da14fdeb66c4fab75c8814"
+    }
+  ]
+}
