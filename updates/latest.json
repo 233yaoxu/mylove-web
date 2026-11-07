@@ -1,11 +1,11 @@
 {
   "schemaVersion": 1,
-  "versionName": "2.6.1",
-  "versionCode": 169,
+  "versionName": "2.6.2",
+  "versionCode": 170,
   "packageName": "com.example.app",
-  "downloadUrl": "https://github.com/233yaoxu/mylove-web/releases/download/v2.6.1/mylove-2.6.1.apk",
-  "sha256": "18b8791cb5ec776bdcdaa96ce4cfcd9e3aae9938a28b0feddba9c300044cffb7",
-  "size": 57668614,
-  "publishedAt": "2026-11-06T15:20:37.098Z",
-  "notes": "分享给朋友或用手机浏览器下载：\nhttps://233yaoxu.github.io/mylove-web/download/\n下载后直接覆盖更新。\n\n心动日常 2.6.1（版本码 169）\n\n重新打包当前修改后的文件，包含角色人设核心、系统消息注入、反重复处理和最终提示词脚本的最新内容；人设维度读取和提示词组织沿用本地当前实现。\n\n安装包沿用 com.example.app 和原证书，可直接覆盖更新。共享下载页继续提供浏览器下载和备用下载，朋友也可以使用同一入口：\nhttps://233yaoxu.github.io/mylove-web/download/\n\n本次已通过网页语法检查、325 项社区/更新/打包回归、39 项 Android 单元检查，以及 APK 的版本、证书、完整性和 422 项运行资源逐字节核对。发布附件提供源码、网页包、配套后端包和 SHA256 校验。\n\n验收限制：旧人设行为测试存在与当前规则不一致的断言；弹幕注入接口的 2 项失败也已在 2.6.0 源码基线复现。上述失败未标记为通过。本次不包含对这些历史问题的修复，未进行在线模型效果验证；当前未连接手机，未进行 2.6.1 真机覆盖安装验收。\n\n社区后端源码与 2.6.0 相同，附带的 Appwrite 包是现有已验证部署包。本次重新发布不迁移或重建社区数据。\n"
+  "downloadUrl": "https://github.com/233yaoxu/mylove-web/releases/download/v2.6.2/mylove-2.6.2.apk",
+  "sha256": "203baf4d00f8192468889a44d4588feda71ba7ad618482f0773ff04ace47a3fc",
+  "size": 57676004,
+  "publishedAt": "2026-11-07T10:01:48.198Z",
+  "notes": "分享给朋友或用手机浏览器下载：\nhttps://233yaoxu.github.io/mylove-web/download/\n下载后直接覆盖更新。\n\n心动日常 2.6.2（版本码 170）\n\n按当前文件重新打包。本次只在独立副本中更新构建版本和发布文件，原项目的应用源码、已修改文件及被删除的文件状态保持原样。\n\n包含当前 index.html、反重复处理、角色连续性、角色核心与最终提示词脚本；未对这些文件增加修复或重写行为。\n\n安装包沿用 com.example.app 和原签名，可直接覆盖更新。分享下载页：\nhttps://233yaoxu.github.io/mylove-web/download/\n\n本次实际检查：网页脚本语法（97 项外部脚本引用、69 项内联脚本）、Android 构建、APK 版本和原证书、ZIP 完整性，以及 422 项运行资源与原项目逐字节一致。源码、网页和后端归档完成完整性、资源和凭据排除检查；1,745 项受保护原文件哈希保持一致。\n\n本次未重新进行社区功能回归、在线模型效果或真机覆盖安装验收。此发布仅更新安装包及下载入口，不新增功能修复。\n\n后端源码与上次发布一致，Appwrite 附件沿用现有部署代码包；本次没有部署后端、迁移或重建社区数据。\n"
 }
